@@ -1,0 +1,266 @@
+<section id="labs">
+  <div class="container">
+ 
+    <div class="section-label" data-es="04 // security labs" data-en="04 // security labs">
+      04 // security labs
+    </div>
+ 
+    <h2 class="section-title" data-es="Práctica & CTF" data-en="Practice & CTF">
+      Práctica &amp; CTF
+    </h2>
+    
+    <div class="labs-intro reveal">
+      <p data-es='En mi tiempo libre practico ciberseguridad en plataformas como <strong>TryHackMe</strong> para mantener mis habilidades afiladas y exponerme a situaciones reales. Cada room simula un entorno o escenario que podría ocurrir en producción — desde análisis forense hasta detección de intrusiones con SIEM — lo que me permite entrenar el pensamiento analítico y la metodología que aplico en el trabajo real.'
+         data-en='In my free time I practice cybersecurity on platforms like <strong>TryHackMe</strong> to keep my skills sharp and expose myself to real-world situations. Each room simulates an environment or scenario that could occur in production — from forensic analysis to SIEM-based intrusion detection — allowing me to train the analytical thinking and methodology I apply in real work.'>
+        En mi tiempo libre practico ciberseguridad en plataformas como <strong>TryHackMe</strong> para mantener mis habilidades afiladas y exponerme a situaciones reales. Cada room simula un entorno o escenario que podría ocurrir en producción — desde análisis forense hasta detección de intrusiones con SIEM — lo que me permite entrenar el pensamiento analítico y la metodología que aplico en el trabajo real.
+      </p>
+    </div>
+ 
+    <!-- WIDGET TRYHACKME -->
+    <div class="thm-widget reveal" id="thmWidget">
+      <div class="thm-widget-header">
+        <span class="thm-widget-logo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="currentColor"/>
+          </svg>
+          TryHackMe
+        </span>
+        <span class="thm-widget-live">
+          <span class="thm-live-dot"></span>
+          live
+        </span>
+      </div>
+      <div class="thm-widget-body" id="thmBody">
+        <div class="thm-skeleton">
+          <div class="thm-skeleton-bar" style="width:60%"></div>
+          <div class="thm-skeleton-bar" style="width:40%"></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="labs-controls reveal">
+      <div class="labs-stats" id="labsStats">
+        <div class="lab-stat" id="statEasy">
+          <div class="lab-stat-dot easy"></div>
+          <span>Easy</span>
+        </div>
+        <div class="lab-stat" id="statMedium">
+          <div class="lab-stat-dot medium"></div>
+          <span>Medium</span>
+        </div>
+        <div class="lab-stat" id="statHard">
+          <div class="lab-stat-dot hard"></div>
+          <span>Hard</span>
+        </div>
+      </div>
+ 
+      <div class="labs-filter" id="labsFilter">
+        <button class="filter-btn active" data-filter="all" data-es="Todos" data-en="All">Todos</button>
+        <button class="filter-btn" data-filter="siem">SIEM</button>
+        <button class="filter-btn" data-filter="forensics" data-es="Forense" data-en="Forensics">Forense</button>
+        <button class="filter-btn" data-filter="network" data-es="Redes" data-en="Network">Redes</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="malware">Malware</button>
+        <button class="filter-btn" data-filter="linux">Linux</button>
+      </div>
+    </div>
+ 
+    <!-- GRID DE CARDS -->
+    <div class="labs-grid" id="labsGrid">
+      <!-- CARD 1: Splunk -->
+      <a class="lab-card portfolio-card reveal" data-category="siem" data-difficulty="medium" href="https://tryhackme.com/room/adventofcyber2024" target="_blank" rel="noopener">
+        <div class="lab-card-bar siem"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">SIEM · Log Analysis</span>
+            <span class="lab-difficulty medium">Medium</span>
+          </div>
+          <div class="lab-title">Splunk Basics — Did you SIEM?</div>
+          <p class="lab-desc" data-es="Análisis de logs con Splunk para detectar una intrusión. Ingesta de datos, consultas SPL, creación de dashboards y configuración de alertas para detectar fuerza bruta y movimiento lateral." data-en="Log analysis with Splunk to detect an intrusion. Data ingestion, SPL queries, dashboard creation and alert configuration to detect brute force and lateral movement.">
+            Análisis de logs con Splunk para detectar una intrusión. Ingesta de datos, consultas SPL, creación de dashboards y configuración de alertas para detectar fuerza bruta y movimiento lateral.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">Splunk</span>
+            <span class="tech-badge lab-tag">SPL</span>
+            <span class="tech-badge lab-tag">SIEM</span>
+            <span class="tech-badge lab-tag">Log Analysis</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe · Advent of Cyber 2025</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+ 
+      <!-- CARD 2: SOC Alert Triaging -->
+      <a class="lab-card portfolio-card reveal" data-category="siem" data-difficulty="medium" href="https://tryhackme.com/room/adventofcyber2024" target="_blank" rel="noopener">
+        <div class="lab-card-bar siem"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">SIEM · SOC</span>
+            <span class="lab-difficulty medium">Medium</span>
+          </div>
+          <div class="lab-title">SOC Alert Triaging — Tinsel Triage</div>
+          <p class="lab-desc" data-es="Investigación y triaje de alertas de seguridad usando Microsoft Sentinel. Análisis de incidentes, priorización y respuesta a alertas en un entorno SOC simulado." data-en="Investigation and triaging of security alerts using Microsoft Sentinel. Incident analysis, prioritization and response to alerts in a simulated SOC environment.">
+            Investigación y triaje de alertas de seguridad usando Microsoft Sentinel. Análisis de incidentes, priorización y respuesta a alertas en un entorno SOC simulado.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">Microsoft Sentinel</span>
+            <span class="tech-badge lab-tag">SOC</span>
+            <span class="tech-badge lab-tag">Alert Triage</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe · Advent of Cyber 2025</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+ 
+      <!-- CARD 3: Forensics Registry -->
+      <a class="lab-card portfolio-card reveal" data-category="forensics" data-difficulty="medium" href="https://tryhackme.com/room/adventofcyber2024" target="_blank" rel="noopener">
+        <div class="lab-card-bar forensics"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">Forense · Windows</span>
+            <span class="lab-difficulty medium">Medium</span>
+          </div>
+          <div class="lab-title">Forensics — Registry Forensics</div>
+          <p class="lab-desc" data-es="Análisis forense del registro de Windows para identificar actividad maliciosa. Investigación de claves de persistencia, artefactos de ejecución y modificaciones sospechosas." data-en="Windows Registry forensic analysis to identify malicious activity. Investigation of persistence keys, execution artifacts, and suspicious modifications.">
+            Análisis forense del registro de Windows para identificar actividad maliciosa. Investigación de claves de persistencia, artefactos de ejecución y modificaciones sospechosas.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">Windows Registry</span>
+            <span class="tech-badge lab-tag">Digital Forensics</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe · Advent of Cyber 2025</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+ 
+      <!-- CARD 4: C2 Detection -->
+      <a class="lab-card portfolio-card reveal" data-category="network" data-difficulty="medium" href="https://tryhackme.com/room/adventofcyber2024" target="_blank" rel="noopener">
+        <div class="lab-card-bar network"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">Redes · PCAP Analysis</span>
+            <span class="lab-difficulty medium">Medium</span>
+          </div>
+          <div class="lab-title">C2 Detection — Command &amp; Carol</div>
+          <p class="lab-desc" data-es="Análisis de un PCAP de gran tamaño para detectar comunicaciones C2 (Command & Control). Extracción de indicadores de compromiso e identificación del protocolo del atacante." data-en="Analysis of a large PCAP file to detect C2 (Command & Control) communications. Extraction of indicators of compromise and identification of the attacker's communication protocol.">
+            Análisis de un PCAP de gran tamaño para detectar comunicaciones C2 (Command &amp; Control). Extracción de indicadores de compromiso e identificación del protocolo del atacante.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">Wireshark</span>
+            <span class="tech-badge lab-tag">PCAP</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe · Advent of Cyber 2025</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+ 
+      <!-- CARD 5: Network Discovery -->
+      <a class="lab-card portfolio-card reveal" data-category="network" data-difficulty="easy" href="https://tryhackme.com/room/adventofcyber2024" target="_blank" rel="noopener">
+        <div class="lab-card-bar network"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">Redes · Reconocimiento</span>
+            <span class="lab-difficulty easy">Easy</span>
+          </div>
+          <div class="lab-title">Network Discovery — Scan-ta Clause</div>
+          <p class="lab-desc" data-es="Escaneo de red para descubrir hosts y servicios activos. Identificación de puertos abiertos y servicios expuestos usando herramientas de descubrimiento de red." data-en="Network scanning to discover active hosts and services. Identification of open ports and exposed services using network discovery tools.">
+            Escaneo de red para descubrir hosts y servicios activos. Identificación de puertos abiertos y servicios expuestos usando herramientas de descubrimiento de red.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">Nmap</span>
+            <span class="tech-badge lab-tag">Port Scanning</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe · Advent of Cyber 2025</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+ 
+      <!-- CARD 6: XSS -->
+      <a class="lab-card portfolio-card reveal" data-category="web" data-difficulty="easy" href="https://tryhackme.com/room/adventofcyber2024" target="_blank" rel="noopener">
+        <div class="lab-card-bar web"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">Web · Vulnerabilidades</span>
+            <span class="lab-difficulty easy">Easy</span>
+          </div>
+          <div class="lab-title">XSS — Merry XSSMas</div>
+          <p class="lab-desc" data-es="Exploración de vulnerabilidades XSS (Cross-Site Scripting): tipos (Reflected, Stored, DOM), vectores de inyección y técnicas de prevención en aplicaciones web." data-en="Exploration of XSS (Cross-Site Scripting) vulnerabilities: types (Reflected, Stored, DOM), injection vectors, and prevention techniques in web applications.">
+            Exploración de vulnerabilidades XSS (Cross-Site Scripting): tipos (Reflected, Stored, DOM), vectores de inyección y técnicas de prevención en aplicaciones web.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">XSS</span>
+            <span class="tech-badge lab-tag">Web Security</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe · Advent of Cyber 2025</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+ 
+      <!-- CARD 7: Malware Analysis -->
+      <a class="lab-card portfolio-card reveal" data-category="malware" data-difficulty="easy" href="https://tryhackme.com/room/adventofcyber2024" target="_blank" rel="noopener">
+        <div class="lab-card-bar malware"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">Malware · Análisis</span>
+            <span class="lab-difficulty easy">Easy</span>
+          </div>
+          <div class="lab-title">Malware Analysis — Malhare.exe</div>
+          <p class="lab-desc" data-es="Análisis estático y dinámico de un ejecutable malicioso en un entorno sandbox. Identificación de comportamientos, indicadores de compromiso y técnicas de evasión." data-en="Static and dynamic analysis of a malicious executable in a sandbox environment. Identification of behaviors, indicators of compromise, and evasion techniques.">
+            Análisis estático y dinámico de un ejecutable malicioso en un entorno sandbox. Identificación de comportamientos, indicadores de compromiso y técnicas de evasión.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">Malware Analysis</span>
+            <span class="tech-badge lab-tag">Sandbox</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe · Advent of Cyber 2025</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+ 
+      <!-- CARD 8: Linux Fundamentals -->
+      <a class="lab-card portfolio-card reveal" data-category="linux" data-difficulty="easy" href="https://tryhackme.com/room/linuxfundamentalspart1" target="_blank" rel="noopener">
+        <div class="lab-card-bar linux"></div>
+        <div class="lab-card-body">
+          <div class="lab-card-top">
+            <span class="lab-category">Linux · Fundamentos</span>
+            <span class="lab-difficulty easy">Easy</span>
+          </div>
+          <div class="lab-title">Linux Fundamentals Part 1</div>
+          <p class="lab-desc" data-es="Dominio de comandos esenciales de Linux: navegación del filesystem, permisos, procesos, redirección y pipes. Base fundamental para cualquier rol de seguridad." data-en="Mastery of essential Linux commands: filesystem navigation, permissions, processes, redirection, and pipes. Fundamental base for any security role.">
+            Dominio de comandos esenciales de Linux: navegación del filesystem, permisos, procesos, redirección y pipes. Base fundamental para cualquier rol de seguridad.
+          </p>
+          <div class="lab-tags">
+            <span class="tech-badge lab-tag">Linux</span>
+            <span class="tech-badge lab-tag">CLI</span>
+          </div>
+          <div class="lab-card-footer">
+            <span class="lab-platform">TryHackMe</span>
+            <span class="lab-link" data-es="Ver room →" data-en="View room →">Ver room →</span>
+          </div>
+        </div>
+      </a>
+    </div>
+ 
+    <div class="labs-empty" id="labsEmpty" style="display:none">
+      <div class="labs-empty-icon">🔒</div>
+      <p class="labs-empty-title" data-es="Próximamente" data-en="Coming soon">Próximamente</p>
+      <p class="labs-empty-desc" data-es="Estoy trabajando en rooms de esta categoría. Volvé pronto." data-en="I'm working on rooms in this category. Check back soon.">
+        Estoy trabajando en rooms de esta categoría. Volvé pronto.
+      </p>
+    </div>
+  </div>
+</section>

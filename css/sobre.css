@@ -1,0 +1,91 @@
+#sobre { background: var(--bg2); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 4rem;
+  align-items: center; 
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-text p {
+  color: var(--muted2);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-text p strong {
+  color: var(--green);
+}
+
+.about-tech-panel {
+  background: var(--card);
+  border: 1px solid var(--border2);
+  border-radius: 16px;
+  padding: 2.5rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.tech-panel-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem; 
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 1px solid var(--border2);
+  padding-bottom: 0.8rem;
+}
+
+.tech-panel-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.tech-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem; 
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tech-panel-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem; 
+}
+
+.clean-tag {
+  font-size: 0.8rem !important; 
+  padding: 0.4rem 0.8rem !important; 
+  font-weight: 500;
+  color: var(--green);
+  background: rgba(0, 200, 150, 0.05);
+  border: 1px solid var(--border2);
+  transition: all 0.2s ease;
+}
+
+.clean-tag:hover {
+  border-color: rgba(0, 200, 150, 0.35);
+  background: rgba(0, 200, 150, 0.09);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 990px) {
+  .about-grid {
+    grid-template-columns: 1fr; 
+    gap: 3rem;
+  }
+  
+  .about-tech-panel {
+    padding: 2rem;
+  }
+}

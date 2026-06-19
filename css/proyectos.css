@@ -1,0 +1,93 @@
+
+#proyectos { background: var(--bg2); }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-header {
+  padding: 2rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.proj-icon {
+  width: 48px; height: 48px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  background: rgba(0,200,150,0.08);
+  border: 1px solid rgba(0,200,150,0.15);
+}
+
+.proj-type {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.proj-body { padding: 0 2rem 2rem; flex: 1; display: flex; flex-direction: column; }
+
+.proj-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.proj-desc {
+  font-size: 0.875rem;
+  color: var(--muted2);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+.proj-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+
+.proj-tag {
+  color: var(--purple);
+  background: rgba(139,92,246,0.08);
+  border: 1px solid rgba(139,92,246,0.2);
+}
+
+.proj-links { display: flex; gap: 0.75rem; }
+
+.proj-link {
+  flex: 1; text-align: center;
+  padding: 0.55rem;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  letter-spacing: 0.05em;
+}
+
+.proj-link.primary {
+  background: rgba(0,200,150,0.1);
+  color: var(--green);
+  border: 1px solid rgba(0,200,150,0.25);
+}
+
+.proj-link.primary:hover { background: rgba(0,200,150,0.2); }
+
+.proj-link.secondary {
+  background: rgba(255,255,255,0.03);
+  color: var(--muted2);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.proj-link.secondary:hover { color: #fff; border-color: rgba(255,255,255,0.15); }
