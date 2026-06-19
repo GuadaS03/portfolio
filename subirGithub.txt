@@ -1,7 +1,0 @@
-Para subirlo y que otros lo vean — GitHub Pages (gratis):
-1. Creá una cuenta en github.com si no tenés
-2. Creá un repositorio nuevo llamado exactamente guadalupesavall.github.io
-3. Subí todos los archivos de la carpeta portfolio/ a ese repo (arrastrando desde la web o con Git)
-4. Andá a Settings → Pages → Source → Deploy from branch → main
-5. En 2 minutos tu portfolio va a estar en https://guadalupesavall.github.io — accesible para cualquiera con ese link
-Es gratis, profesional y es exactamente lo que usan la mayoría de los developers para su portfolio. ¿Querés que te explique cómo subir los archivos paso a paso?
